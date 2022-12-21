@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{padding:0 ;margin: 0%;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;box-sizing: border-box;}
+        .container{background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%),url(signin.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;position: relative;;width: 100%;height: 100vh;}
+        .container2{transform: translate(-50%,-50%);position: absolute;width: 400px;top: 50%;left: 50%;background: white;padding: 50px 40px 70px ;text-align: center;height: 500px;}
+        form{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+        h1{text-align: center;color: orangered;margin-bottom: 15px;}
+        .input{display: flex;padding: 20px;}
+        .buttons{display: flex;justify-content: space-between;align-items: center;margin:30px  60px;}
+        p a{display: inline-block;text-decoration: none;}
+        p{font-size: small;font-style: italic;}
+        input::placeholder{font-style: italic;}
+        .btn{text-decoration: none;background: orangered;padding: 20px 20px;color: white;border-radius: 50%;}
+    .btn:hover{ transform: scale(1.5);background: black;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+            <h1>Signup</h1>
+            <form>
+                <div class="input">
+                <label for="name"></label>
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" placeholder="Name"></div>
+                <div class="input"><label for="email"></label>
+                <i class="fas fa-inbox"></i>
+                <input type="email" id="email" placeholder="email"></div>
+                <div class="input"><label for="password"></label>
+                    <i class="fas fa-lock"></i>
+                <input type="text" id="password" placeholder="Password">
+                </div>
+            </form>
+            <p>Lost Password?<a href="#">Click here</a></p>
+            <div class="buttons">
+                <a href="#" class="btn" >Sign up</a>
+                <a href="#" class="btn">Sign in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
